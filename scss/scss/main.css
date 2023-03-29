@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+  padding: 0 10px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+header nav ul li {
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+header nav ul li:hover {
+  transform: scale(1.2);
+  background-color: white;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #000;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  border: 1px solid black;
+}
+section .sec1 {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+section .sec1 .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(179, 179, 42);
+  border: 1px dotted black;
+  font-weight: bold;
+  transition: 1s;
+}
+section .sec1 .box.box:hover {
+  background-image: url(/minion.png);
+  background-size: cover;
+  transform: rotateX(360deg);
+  background-repeat: no-repeat;
+}
+section .sec1 .box.box:hover h4 {
+  display: none;
+}
+
+footer {
+  height: 100vh;
+}
+footer .footer {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer .sec h1 {
+  margin-bottom: 20px;
+}
+footer .footer .sec ul {
+  list-style: none;
+}
+footer .footer .sec .icon {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+footer .footer .sec .icon a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
