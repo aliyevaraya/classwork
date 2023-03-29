@@ -14,14 +14,13 @@ header{
                 &:hover{
                    transform: scale(1.2);
                    background-color: white;
+                   a{
+                    color: #000;
+                   }
                 }
                 a{
                     color: white;
                     text-decoration: none;
-                
-                    &:hover{
-                        color: #000;
-                    }
                 }
             }
         }
