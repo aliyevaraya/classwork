@@ -1,0 +1,28 @@
+header{
+    background-color: black;
+    padding: 0 10px;
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            li{
+                padding: 5px;
+                border-radius: 8px;
+                transition: 0.5s;
+                &:hover{
+                   transform: scale(1.2);
+                   background-color: white;
+                   a{
+                    color: #000;
+                   }
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
