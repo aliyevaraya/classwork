@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700;800&display=swap");
+.container {
+  max-width: 1200px;
+  margin: 0 5%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  background-image: url(./images/bg.png);
+  background-size: cover;
+  background-position: center;
+}
+header nav {
+  padding: 20px 0;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li img {
+  width: 55px;
+  position: relative;
+}
+header nav ul li img:hover::after {
+  content: "";
+  display: block;
+  border: 1px solid red;
+  width: 20px;
+  position: absolute;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+header nav ul li a:hover::after {
+  display: block;
+  content: "";
+  width: 20px;
+  border: 1px solid red;
+  position: absolute;
+}
+header .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .content .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+header .content .text h3 {
+  font-family: "Alkatra", cursive;
+  color: #8a7162;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+header .content .text h1 {
+  width: 40%;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 60px;
+  color: white;
+}
+header .content .text a {
+  padding: 15px 40px;
+  background-color: #8a7162;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+header .content .text a:hover {
+  background-color: #a1948c;
+}
+header .img img {
+  width: 500px;
+  transform: translate(9%, 33%);
+  transition: 3s;
+}
+header .img img:hover {
+  transform: translate(0%, 60%);
+}/*# sourceMappingURL=main.css.map */
