@@ -79,9 +79,12 @@ footer .footer {
   height: 60vh;
   display: flex;
   justify-content: space-around;
-  padding: 70px;
+  align-items: center;
   background-color: rgb(230, 230, 236);
   margin-top: 20px;
+}
+footer .footer .sec {
+  height: 30vh;
 }
 footer .footer .sec h3 {
   margin-bottom: 20px;
