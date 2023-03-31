@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+
+}
+
+
+
+nav ul li:hover {
+    background-color: white;
+    border-radius: 8px;
+}
+
+ul li:hover a {
+    color: #000;
+}
+nav ul .menu  {
+    display: none;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+#sec1{
+    height: 100vh;
+    background-image: url(./images/bg.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.text {
+    width: 50%;
+    font-size: 18px;
+}
+
+h4 {
+    text-align: center;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    border: 1px solid green;
+    width: 60px;
+
+}
+
+h4 span {
+    color: rgb(104, 23, 23);
+    text-shadow: 3px 3px 3px orange;
+}
+
+p {
+    text-align: center;
+}
+
+#sec2 {
+    height: 100vh;
+    background-image: url(./images/R.png);
+    background-attachment: fixed;
+}
+
+.sec3 h1 {
+    text-align: center;
+}
+
+.boxs {
+    position: relative;
+    height: 100vh;
+    border: 2px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box1 {
+    background-color: rgb(104, 23, 23);
+    z-index: 3;
+}
+
+.box2 {
+    background-color: grey;
+    left: 30%;
+    top: 40%;
+}
+
+.box3 {
+    background-color: rgb(29, 29, 114);
+    bottom: 18%;
+    left: 35%;
+    z-index: 2;
+}
+
+.box4 {
+    background-color: rgb(173, 135, 88);
+    right: 38%;
+    bottom: 15%;
+    z-index: 1;
+}
+
+.box5 {
+    background-color: rgb(8, 75, 8);
+    right: 30%;
+    bottom: 33%;
+   
+}
+
+@media only screen and (max-width:767px) {
+    header {
+        border: 2px solid white;
+    }
+
+    #sec1 {
+        background-image: url(./images/bg2.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+   .text{
+        visibility: hidden;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav ul .home,
+    nav ul .menu  {
+        display: block;
+    }
+
+    .rest .fa-bars {
+        color: white;
+    }
+    .box{
+        position: static;
+    }
+}

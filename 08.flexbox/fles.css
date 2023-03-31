@@ -1,0 +1,39 @@
+section{
+    width: 100%;
+    border: 2px solid rgb(124, 79, 79);
+}
+h1{
+    text-align: center;
+}
+
+.div-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 6px;
+}
+
+.box{
+    width: 100%;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:first-child{
+    background-color: rgb(51, 90, 77);
+}
+.box:nth-child(2){
+    background-color: rgb(144, 42, 165);
+}
+.box:nth-child(3){
+    background-color: chocolate;
+}
+.box:nth-child(4){
+    background-color: rgb(128, 173, 76);
+}
+.box:nth-child(5){
+    background-color: rgb(6, 80, 6);
+}
