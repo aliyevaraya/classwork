@@ -1,0 +1,60 @@
+#team {
+  height: 100vh;
+  margin: 50px 0;
+  .teammates {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    &::after {
+      content: "";
+      border: 1px solid yellow;
+      width: 100px;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  .row {
+    margin-top: 10px;
+    column-gap: 10px;
+    .box {
+      height: 200px;
+      border: 1px dotted black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      transition: 1s;
+      &:nth-child(odd) {
+        background-color: violet;
+        &:hover {
+          background-image: url(./images/minion1.jpg);
+          background-size: cover;
+        }
+      }
+      &:nth-child(even) {
+        background-color: rgb(32, 218, 153);
+        &:hover{
+        background-image: url(./images/minion3.jpg);
+        background-size: cover;
+        }
+      }
+      &:hover {
+        h3{
+            display: none;
+        }
+        animation: minion 1s linear;
+        @keyframes minion {
+          0% {
+            transform: rotateX(0deg);
+          }
+          50% {
+            transform: rotateX(90deg);
+          }
+        }
+      }
+    }
+  }
+}

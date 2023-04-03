@@ -1,0 +1,16 @@
+#sec-bg {
+  height: 70vh;
+  margin-top: 80px;
+  background-image: url(./images/sec-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  .opacity {
+    background-color: rgba(#000, 0.5);
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

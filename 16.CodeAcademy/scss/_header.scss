@@ -1,0 +1,33 @@
+header {
+  height: 80vh;
+  background-image: url(./images/header-bg.png);
+  background-size: cover;
+  nav {
+    background-color: #f0f0f0;
+    position: fixed;
+    width: 100%;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      li {
+        position: relative;
+        &:hover::after {
+          position: absolute;
+          content: "";
+          display: block;
+          border: 1px solid red;
+          width: 100%;
+        }
+        img {
+          width: 90px;
+        }
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
