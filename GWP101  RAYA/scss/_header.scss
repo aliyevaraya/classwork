@@ -1,0 +1,29 @@
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    ul{
+       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        li{
+            position: relative;
+            &:hover::after{
+                position: absolute;
+                content: "";
+                display: block;
+                border: 1px solid red;
+                width: 50px;
+            }
+            img{
+                width: 90px;
+            }
+            a{
+                color: black;
+                
+            }
+        }
+    }
+  }
