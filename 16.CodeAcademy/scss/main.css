@@ -66,12 +66,17 @@ header nav ul li a {
 #about .container .img-info .row {
   margin-top: 30px;
 }
-#about .container .img-info .row .col-6 {
+#about .container .img-info .row .col-md-6 {
   display: flex;
   gap: 30px;
 }
-#about .container .img-info .row .col-6 img {
+#about .container .img-info .row .col-md-6 img {
   width: 30%;
+}
+@media only screen and (max-width: 767px) {
+  #about .container .about {
+    width: 90%;
+  }
 }
 
 #sec-bg {
@@ -92,7 +97,7 @@ header nav ul li a {
 }
 
 #team {
-  height: 100vh;
+  height: 100%;
   margin: 50px 0;
 }
 #team .teammates {
@@ -110,16 +115,16 @@ header nav ul li a {
   display: block;
   margin-top: 10px;
 }
+#team .minion-box {
+  margin-right: 25px;
+}
 #team .row {
   margin-top: 10px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
 }
 #team .row .box {
   height: 200px;
   border: 1px dotted black;
   display: flex;
-  justify-content: center;
   align-items: center;
   color: white;
   transition: 1s;
@@ -152,6 +157,11 @@ header nav ul li a {
     transform: rotateX(90deg);
   }
 }
+@media only screen and (max-width: 767px) {
+  #team .minion-box {
+    margin-right: 0 !important;
+  }
+}
 
 #contact {
   height: 90vh;
@@ -166,7 +176,7 @@ header nav ul li a {
   color: rgb(94, 93, 93);
 }
 #contact .row .col .form input {
-  width: 250px;
+  width: 30%;
   border: 1px dotted black;
   padding: 10px 15px;
   margin-bottom: 20px;
@@ -175,14 +185,14 @@ header nav ul li a {
   padding: 10px;
 }
 #contact .row .col .form .xx {
-  width: 400px;
+  width: 60%;
 }
 #contact .row .col .form #prof {
-  width: 500px;
+  width: 60%;
   padding: 10px;
 }
 #contact .row .col .form button {
-  width: 500px;
+  width: 60%;
   background-color: orange;
   padding: 10px;
   border: none;

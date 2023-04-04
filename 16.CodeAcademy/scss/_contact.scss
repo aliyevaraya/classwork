@@ -5,6 +5,7 @@
     align-items: center;
     border: 1px solid black;
     .row{
+
         .col{
             h1{
             font-weight: bold;
@@ -13,7 +14,7 @@
             }
             .form{
                 input{
-                    width: 250px;
+                    width: 30%;
                     border: 1px dotted black;
                     padding: 10px 15px;
                     margin-bottom: 20px;
@@ -22,14 +23,14 @@
                     padding: 10px;
                 }
                 .xx{
-                    width: 400px;
+                    width: 60%;
                 }
                 #prof{
-                    width: 500px;
+                    width: 60%;
                     padding: 10px;
                 }
                 button{
-                    width: 500px;
+                    width: 60%;
                     background-color: orange;
                     padding: 10px;
                     border: none;

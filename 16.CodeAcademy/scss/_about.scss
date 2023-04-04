@@ -22,13 +22,20 @@
       margin-top: 80px;
       .row {
         margin-top: 30px;
-        .col-6 {
+        .col-md-6 {
           display: flex;
           gap: 30px;
           img {
             width: 30%;
           }
         }
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .container {
+      .about {
+        width: 90%;
       }
     }
   }

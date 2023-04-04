@@ -1,5 +1,5 @@
 #team {
-  height: 100vh;
+  height: 100%;
   margin: 50px 0;
   .teammates {
     width: 100%;
@@ -16,14 +16,17 @@
       margin-top: 10px;
     }
   }
+  .minion-box {
+    margin-right: 25px;
+   
+  }
   .row {
     margin-top: 10px;
-    column-gap: 10px;
+
     .box {
       height: 200px;
       border: 1px dotted black;
       display: flex;
-      justify-content: center;
       align-items: center;
       color: white;
       transition: 1s;
@@ -36,14 +39,14 @@
       }
       &:nth-child(even) {
         background-color: rgb(32, 218, 153);
-        &:hover{
-        background-image: url(./images/minion3.jpg);
-        background-size: cover;
+        &:hover {
+          background-image: url(./images/minion3.jpg);
+          background-size: cover;
         }
       }
       &:hover {
-        h3{
-            display: none;
+        h3 {
+          display: none;
         }
         animation: minion 1s linear;
         @keyframes minion {
@@ -55,6 +58,12 @@
           }
         }
       }
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .minion-box {
+      margin-right: 0 !important;
     }
   }
 }
